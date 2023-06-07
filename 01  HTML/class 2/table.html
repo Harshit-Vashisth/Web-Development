@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,tr,td , th{
+             border: 1px solid black;   /*  for creating table  broder*/
+              border-collapse: collapse; /* use to remove the double line and convert them to one line */
+        }
+    </style>
+</head>
+<body>
+    <!-- IMPORTANT CONCEPTTTT -->
+        <!-- TABLES -->
+            <!-- tr:table row  for row
+                table for table 
+                td:(Table data) for coloumn
+             -->
+
+             <!-- for lines u style tags -->
+             
+             <table>
+                <caption>My Saving</caption>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Saving</th>
+                    </tr>
+                </thead>
+                 
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>March</td>
+                        <td>200</td>
+                    </tr>
+                </tbody>
+               
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>500</td>
+                    </tr>  
+                </tfoot>
+                    
+             </table>
+            <!-- using thead tfoot tbody  is the best practice to be implemented  -->
+            <!-- gernally kya hota h jo apna th hota h vo heading hoti h body toh thead me td nihi th use karo  -->
+</body>
+</html>
