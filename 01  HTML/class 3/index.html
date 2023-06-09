@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr> 
+            <!-- th se hum table heading ko denote karte h -->
+            <th colspan="2">
+                Month</th>
+            <!-- now i want to strech the month wala col span to 2 -->
+            <td>Amount</th>
+        </tr>
+        <tr>
+            <th>January</td>
+                <!-- let say mujhe abbi 100 ki width and height inc karni h  -->
+            <td rowspan="2" colspan="2">100</td>
+        </tr>
+        <tr>
+            <!-- let say i want ki jo feb h vo 3 row span karde  i will remove march and total -->
+            <th rowspan="3">February</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <!-- <th>March</td> -->
+            <td>300</td>
+        </tr>
+        <tr>
+            <!-- <th>Total</td> -->
+            <td>600</td>
+        </tr>
+        <!-- span -> konsa row konsa col kitne aur col tk span karne wlaa ha -->
+        <!-- check pic yaha pr jo cell thi uski width 2 cell ke equal ho chuki h  -->
+        <!-- second pic iss wale me cell downward span hogya h  -->
+        <!-- third eg iss wwali me phele 4 colspan hua h      -->
+        <!-- col span - it is use to make cell span over multiple coloumns or strech kar skte h multiple col tk -->
+        <!-- 4 cell me row span and col span both at once  -->
+
+    </table>
+</body>
+</html>
