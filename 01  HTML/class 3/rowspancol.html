@@ -4,34 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,tr,td,th{
+            border: 1px solid red;
+            border-collapse: collapse;
+            text-align: center;
+            caption-side: bottom;
+        }
+    </style>
 </head>
 <body>
     <table>
-        <th>
-            <td></td>
-            <td></td>
-            <td></td>
+        <caption ><b> <i>My first table</i></b> </caption>
+        <tr>
+            <th colspan="2">abcd</th>
+            <!-- using rowspane but for that 2 col cell should not be there so i remove it  -->
+            <!-- <th>abcd</th> -->
+            <th>abcd</th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>abcd</td>
+            <td rowspan="3">abcd</td>
+            <td>abcd</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>abcd</td>
+             
+            <!-- <td>abcd</td> -->
+            <td>abcd</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>abcd</td>
+            <!-- <td>abcd</td> -->
+            <td>abcd</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>abcd</th>
+            <th>abcd</th>
+            <th>abcd</th>
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td>abcd</td>
+            <td>abcd</td>
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <td rowspan="2"  colspan="2">hemlo</td>
+            <!-- <td>abcd</td> -->
+        </tr>
+        <tr>
+            <td>abcd</td>
+            <!-- <td>abcd</td>
+            <td>abcd</td> -->
         </tr>
     </table>
 </body>
 </html>
+
+<!-- now do the HWWWWW -->
