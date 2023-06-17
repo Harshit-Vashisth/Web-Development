@@ -3,15 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact US</title>
 </head>
 <body>
     <header>
         <h1>Welcome to CodeHelp</h1>
     </header>
-    <main>
+    <h2>Contant us form</h2>
+    <!-- h1 and h2 is the block element to vo apne aap new line par jakar add hojata h toh islsiye mujeh br tag use karne ki need hui hi ni -->
+
+    <form action="https://youtu.be/8DMF0U6xV78">
+        <label for="name">Name: </label>
+        <input type="text"
+         name="name" 
+         placeholder="Enter your Name">
+        <br>
+
+        <!-- label bolta h meri id ek hi honi chaiye toh label ki mapping 1 to 1 hoti tabhi hum for me id use karte ha  -->
+        <label for="email">Email: </label>
+        <input type="text" name="email" placeholder="Enter your email">
+        <br>
+        <label for="contact">Contact: </label>
+        <input type="number" name="contact"w>
+        <br>
+        <label for="gender">Gender:</label>
+        <select name="Gender" id="Gender">
+            <option value="Male">Male</ option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <!-- backend pr jo likha h value me vo select hota h not name  -->
+        <br>
+        <label for="date">Date of Birth: </label>
+        <input type="date" name="date">
+        <br>
+
+        <!-- let add rating -->
+        <span>Rating</span>
+        <input type="radio" name="rating" id="rating1" value="1">
+        <label for="rating1">1</label>
+        <input type="radio" name="rating" id="rating2" value="2">
+        <label for="rating2">2</label>
+        <input type="radio" name="rating" id="rating3" value="3">
+        <label for="rating3">3</label>
+        <input type="radio" name="rating" id="rating4" value="4">
+        <label for="rating4">4</label>
+        <input type="radio" name="rating" id="rating5" value="5">
+        <label for="rating5">5</label>
+        <!-- name me sbka name raitng h toh usse conflict ni hora h  -->
         
-    </main>
+        <label for="msg">Enter Your Message</label>
+        <br>
+    
+        <textarea name="message" id="msg" cols="40" rows="5" placeholder="Enter Your Message "></textarea>
+        <br>
+        <input type="submit" name="submit" id="submit" value="Submit">
+        <input type="reset" name="reset" id="reset" value="Reset">
+        <!-- resett mane jo jo vlaue dali thi browser ne usko pick kara ek pakcet banaaya nad action karne ke liye bhej diya -->
+        <!-- client and server ke apka me connect karne ka kaam h json ka      -->
+        
+        <!-- 3 image work as a button -->
+        <footer>
+            <a href="https://www.youtube.com/" target="_black">
+                <img src="https://yt3.googleusercontent.com/584JjRp5QMuKbyduM_2k5RlXFqHJtQ0qLIPZpwbUjMJmgzZngHcam5JMuZQxyzGMV5ljwJRl0Q=s900-c-k-c0x00ffffff-no-rj" alt="Youtube" width="100" >
+            </a>
+            <a href="https://www.youtube.com/" target="_black">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png" alt="Youtube" width="100" >
+            </a>
+            <a href="https://www.youtube.com/" target="_black">
+                <img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg" alt="Instagr" width="100" >
+            </a>
+        </footer>
+
+    </form>
     
 </body>
 </html>
