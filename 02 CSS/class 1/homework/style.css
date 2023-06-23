@@ -19,9 +19,14 @@ h2{
 img{
     margin: 10px;
 }
-
 aside{
+    width: 30%;
+    padding:0.5rem;
+}
+
+#image{
     width: 40%;
+    float:right;
     padding:0.5rem;
     margin: 5px;
     float: right;
@@ -29,6 +34,13 @@ aside{
     color:#29627e; 
     background-color: azure;
 }
-aside.img{
-    width
+#contentimg{
+    width:350px;
+    height:300px;
+    
+}
+#imadun{
+    float: right;
+    padding: 10px;
+    box-shadow: inset 1px 0px 10px 1px #4ea3ce;
 }
