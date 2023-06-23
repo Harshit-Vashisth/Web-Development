@@ -49,5 +49,18 @@ aside{
     box-shadow: inset 1px 0px 10px 1px #07391b;
 }
 #div0{
-    
+    border: 1px solid grey;
+            border-collapse: collapse;
+    width:60%;
 }
+table{
+    width:100%;
+    background-color: rgb(230, 237, 230);
+}
+
+#a0 {
+    width: 10%; /* Adjust the width as desired */
+  }
+  td:first-child {
+    width: 10%; /* Adjust the width as desired */
+  }
