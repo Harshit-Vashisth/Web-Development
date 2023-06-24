@@ -118,7 +118,7 @@
                 <!-- abhi phele ye data niche ayega toh do css properties -->
                 <aside id="asi">
                 <div id="imadun">
-                    <img id="contentimg" src="ima.jpg" alt="Indian Military Academy">
+                    <img id="contentimg" src="ima.jpg" alt="Indian Military Academy" ;onclick="onClick(this)">
                     <figcaption ><a  id="links" href="https://en.wikipedia.org/wiki/Indian_Military_Academy" style="margin-left: 25%;">Indian Military Academy</a></figcaption>
                 </div>    
                 </aside>
@@ -171,5 +171,12 @@
     </ul>
     </div>
     
+
+    <script>
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+        }
+        </script>
 </body>
 </html>
