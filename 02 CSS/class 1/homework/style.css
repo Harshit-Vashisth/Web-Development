@@ -19,10 +19,6 @@ h2{
 img{
     margin: 10px;
 }
-aside{
-    width: 30%;
-    padding:0.5rem;
-}
 
 #image{
     width: 40%;
@@ -41,32 +37,44 @@ aside{
 }
 #imadun{
     float: right;
-    padding: 10px;
+    padding:5.1px;
     box-shadow: inset 1px 0px 10px 1px #4ea3ce;
 }
 #captain{
     padding: 10px;
     box-shadow: inset 1px 0px 10px 1px #07391b;
+    width: 90%;
 }
-#div0{
-    border: 1px solid grey;
-            border-collapse: collapse;
-    width:40%;
-    padding-top: 0px;
-    margin-top: 0px;
-    background-color: rgb(243, 243, 243);
-}
-table{
-    width:100%;
-    /* background-color: rgb(230, 237, 230); */
-}
-
 
   #a0{
     width: 30%;
+  }
+  #a1{
+    width: 70%;
   }
   #imagecap{
     background-color: rgb(187, 216, 249);
     margin-top: 0%;
     padding-top: 0%;
   }
+ 
+  aside{
+    border: 1px solid grey;
+            border-collapse: collapse;
+    width: 19.5%;
+    padding-left:0.5rem;
+    margin-left: 5px;
+    float: right;
+    
+    float: right;
+    
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: rgb(243, 243, 243);
+}
+#asi{
+    width: 22%;
+}
+#captain:hover{
+    width:100%;
+}
