@@ -31,14 +31,16 @@ img{
     background-color: azure;
 }
 #contentimg{
-    width:350px;
-    height:300px;
+    width:95%;
+    height:80%;
+    margin-left: 3%;
     
 }
 #imadun{
     float: right;
-    padding:5.1px;
+    padding:5.5px;
     box-shadow: inset 1px 0px 10px 1px #4ea3ce;
+    width: 100%;
 }
 #captain{
     padding: 10px;
@@ -77,4 +79,10 @@ img{
 }
 #captain:hover{
     width:100%;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+#contentimg:hover{
+    width: 90%;
+    margin-left: 5%;
 }
