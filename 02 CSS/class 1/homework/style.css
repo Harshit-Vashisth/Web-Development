@@ -51,16 +51,22 @@ aside{
 #div0{
     border: 1px solid grey;
             border-collapse: collapse;
-    width:60%;
+    width:40%;
+    padding-top: 0px;
+    margin-top: 0px;
+    background-color: rgb(243, 243, 243);
 }
 table{
     width:100%;
-    background-color: rgb(230, 237, 230);
+    /* background-color: rgb(230, 237, 230); */
 }
 
-#a0 {
-    width: 10%; /* Adjust the width as desired */
+
+  #a0{
+    width: 30%;
   }
-  td:first-child {
-    width: 10%; /* Adjust the width as desired */
+  #imagecap{
+    background-color: rgb(187, 216, 249);
+    margin-top: 0%;
+    padding-top: 0%;
   }
