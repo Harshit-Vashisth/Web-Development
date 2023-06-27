@@ -1,0 +1,14 @@
+.bpc{
+    max-height: 100px;
+    border:1px solid black;
+
+    /* to handle overflow u can add overflow scrool  */
+    overflow:scroll;
+}
+.mydiv{
+    border:1px solid black;
+    margin: 30px;
+    min-height:100px; 
+    /* aggar apka content min height se bhi kaam h toh min height yahi hogi agar zada hoga toh ye apne aap grow hojata h  */
+    
+}
