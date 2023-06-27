@@ -1,3 +1,12 @@
 .box{
-    
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    /* box me jo text ka color hota h voi colour humari shadow ka hota h toh text colour change hoga toh shadow colour changes unless u make it change */
+    color: red;
+    box-shadow: 10px 10px 15px green,20px 20px 20px brown;
+    /* by using negative value u can change direction   */
+    /* HHWWW how to addd border using shadow using shadow */
+
 }
