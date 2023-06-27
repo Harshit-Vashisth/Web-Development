@@ -27,3 +27,21 @@
 background-image: radial-gradient(circle,red,blue,green);
 background-image: radial-gradient(yellow 5%,orange 10%,red 50%);
 }
+
+.conic{
+    color:white;
+    border:1px solid black;
+    margin:10px;
+    height:400px;
+    width:400px;
+    background-image:
+    /* home work */
+}
+.flag{
+    color:white;
+    border:1px solid black;
+    margin:10px;
+    height:300px;
+    width:500px;
+    background-image: linear-gradient(orange,white ,green);
+}
