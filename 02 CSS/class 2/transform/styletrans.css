@@ -1,0 +1,16 @@
+.box{
+    background-color: aqua;
+    transform: translate(100px,20px);
+    transform: translateX(200px);
+    /* span me transform: work ni kara h u have to find it out ;  block element maybe  */
+
+    /* rotate  */
+    transform: rotate(-45deg);
+    /* postive angle me clock wise negative me anticlockwise */
+
+    margin: 200px;
+    transform: scale(2,3); 
+    /* isse zoom in x , y width(horizontal) and height(vertical) me  */
+
+    transform: skew(13 deg);
+}
