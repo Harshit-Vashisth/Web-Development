@@ -1,0 +1,24 @@
+#head1{
+    position:absolute;
+    bottom:90%;
+}
+#head2{
+    position:absolute;
+    top:90%;
+}
+#head3{
+    position:absolute;
+    left:90%;
+}
+#head4{
+    position:absolute;
+    left:90%;
+    top:90%;
+}
+#head5{
+    position:absolute;
+    top:50%;
+    left:50%;
+    right:50%;
+    bottom:50%;
+}
