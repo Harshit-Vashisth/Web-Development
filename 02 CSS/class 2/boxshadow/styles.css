@@ -34,7 +34,7 @@ background-image: radial-gradient(yellow 5%,orange 10%,red 50%);
     margin:10px;
     height:400px;
     width:400px;
-    background-image:
+    background-image:conic-gradient(red,pink,orange,yellow,green,blue,black);
     /* home work */
 }
 .flag{
