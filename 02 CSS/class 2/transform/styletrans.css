@@ -5,12 +5,17 @@
     /* span me transform: work ni kara h u have to find it out ;  block element maybe  */
 
     /* rotate  */
-    transform: rotate(-45deg);
+    /* transform: rotate(-45deg); */
     /* postive angle me clock wise negative me anticlockwise */
 
     margin: 200px;
-    transform: scale(2,3); 
+    transform: scale(2,4); 
     /* isse zoom in x , y width(horizontal) and height(vertical) me  */
 
-    transform: skew(13 deg);
+    transform: skew(43deg);
+   
+}
+.box2{
+    transform: translate(400px,200px);
+    transform: matrix(1, -0.8, 0, 1, 5, 0);
 }
