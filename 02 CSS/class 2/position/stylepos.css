@@ -1,14 +1,30 @@
 /* p{
     position: static;
 } */
-div{
+
+.box{
     display:inline-block;
     width:150px;
     height:150px;
     background-color: aqua;
     border:1px solid black;
-}
-.box{
     position: relative;
     
+    
+}
+#box3{
+    position: absolute ;
+    top:100px;
+    left:50px;
+    /* pstio hui h related a  */
+}
+
+/* fixed */
+/* #box1{
+    position: fixed;
+} */
+.wrapper{
+    height: 1000px;
+    background-color: yellow;
+    width:100vw;
 }
