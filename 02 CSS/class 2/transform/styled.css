@@ -15,5 +15,5 @@ div{
     margin :20px;
     transform:perspective(350px) scaleZ(3) rotateX(15deg) rotateY(30deg);
     
-    if u want to rotat there is no need to tranfomm 
+    /* if u want to rotat there is no need to tranfomm  */
 }
