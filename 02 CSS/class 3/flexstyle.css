@@ -6,15 +6,46 @@
 
 
     /* let say i want to change the direction of main axis  */
-    flex-direction: column-reverse;
+    flex-direction: row;
     /* now become vertical  */
     /* aur chij bhi hoti h jese row reverse ulta order aur right side karna h
     same ese cloun reverse bhi hota h      */
 
 
+    flex-wrap: wrap;
+    /* wrap me after fixed or
+     predifine wifth aur widht kaam ni hogi vo adjust karega ya shift kardega */
+     /* default ki keyword hota h nowrap */
 
+     flex-wrap: wrap-reverse;
+     /* isme wrap ka ulta hota h mtlb next element uper hojata h  */
+
+
+     flex-flow: row warp;   
+     /* homework  */
+     /* shorthand notation hoti h isme flex wrap and flex driection can be writtenr in same line  */
+
+    /* justify content  */
+    /* ye main axis ke uper item of allign kane ka kama karta h */
+    justify-content: flex-start;
+    /* isse ssari value main axis ke starting me aati h  */
+    justify-content: flex-end;
+    /* isse ssari value main axis ke ending me aati h  */
+    justify-content: center;
+    /* isse ssari value main axis ke center me aati h  */
+
+    justify-content: space-around;
+    /* space aroudn se kya hota h inn chari blocks ke andar equal equal spacing aajaige */
+    /* sirf bich me last ke right and first ke left me vo equal ni hoti h  */
+
+    justify-content: space-evenly;
+    /* evenly se saare ke sare space me equal spacing aati h  */
+
+    justify-content: space-between;
+    /* left and right no space baki sabme space hoti h  */
 }
 .box{
     border:1px solid brown;
     background-color: aqua;
+    width:5cqw;
 }
