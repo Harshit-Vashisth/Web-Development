@@ -1,7 +1,20 @@
 .container{
     height: 400px;
     border:2px solid green;
+    display: flex;   /*ssaare boox abh horzontal direct point kare h ; */
+    /* jab hum display flex likhte h toh by default saare elements main axis ke uper stack hona shruru hojate h  */
+
+
+    /* let say i want to change the direction of main axis  */
+    flex-direction: column-reverse;
+    /* now become vertical  */
+    /* aur chij bhi hoti h jese row reverse ulta order aur right side karna h
+    same ese cloun reverse bhi hota h      */
+
+
+
 }
 .box{
     border:1px solid brown;
+    background-color: aqua;
 }
