@@ -17,7 +17,7 @@
      predifine wifth aur widht kaam ni hogi vo adjust karega ya shift kardega */
      /* default ki keyword hota h nowrap */
 
-     flex-wrap: wrap-reverse;
+     flex-wrap: wrap;
      /* isme wrap ka ulta hota h mtlb next element uper hojata h  */
 
 
@@ -43,6 +43,29 @@
 
     justify-content: space-between;
     /* left and right no space baki sabme space hoti h  */
+
+
+    /* align item cross axis ke uper item ko allign karti h same is justify main par karti h  */
+    align-items: flex-start;
+    /* vertical cross axis ki starting me place hojaiingi
+    
+    lets say mujhe end me place karni h */
+    align-items: flex-end;
+
+    align-items:center;
+
+    align-items: stretch;
+    /* ye sari ki sari items apne parent ke equal strech hojati h 
+    allign item ki by default val strech hi hoti h  */
+
+    align-items: baseline;
+    /* lets say sabka height wagera different ho toh baseline se kya hota h sara content ek sigle line me kara h else sabki baseline differnt hoti h 
+     you can se it by felx start*/
+     
+     /* agar mujhe apne kisi contnet ko center karna h toh justify and align item dono ko center kardo 
+     */
+     
+
 }
 .box{
     border:1px solid brown;
