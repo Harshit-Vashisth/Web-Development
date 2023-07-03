@@ -1,0 +1,28 @@
+#wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    /* yaha hum 3d wali game khelenge toh 4d wali game ko on karne ke liye  */
+    /* we have to define persepctive  */
+    /* ye z=0 plane and humari eye ke bich wla distance hota h  */
+    perspective: 10px;
+    /* value se frk ni padhta h  */
+}
+    .container{
+
+        /* use flex  */
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height:100%;
+
+         /* transform style;  */
+        transform-style: preserve-3d;
+
+
+        z-index:-1;
+        /* z index is used for obver lapping  */
+    }
+
