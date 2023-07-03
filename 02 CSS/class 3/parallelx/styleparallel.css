@@ -1,3 +1,8 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
 #wrapper{
     height:100vh;
     overflow-x: hidden;
@@ -26,3 +31,19 @@
         /* z index is used for obver lapping  */
     }
 
+.background{
+    transform:translateZ(-40px) scale(5.1);
+    /* isse image choti dikhegi but choti ni hui dur chali gyi h  */
+}
+.foreground{
+    transform:translateZ(-20px) scale(3);
+}
+
+.background,.foreground{
+    position:absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    object-fit: cover;
+    /* fit image in container ,,, container by kara kyuki i want to create flex and for flex i want to create  a parent box soo  */
+}
