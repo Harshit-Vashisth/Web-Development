@@ -1,11 +1,18 @@
 /* abh hum jo properties apply karenge vo hum apply karenge flex items ke uper  */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border ya padding me content ka block chota hota h but total remain same  */
+}
+
 .container{
     height: 400px;
     border:2px solid green;
     display: flex;   /*ssaare boox abh horzontal direct point kare h ; */
     
-    flex-direction: row;
+    /* flex-direction: row; */
      
      flex-wrap: wrap;
 
@@ -15,7 +22,7 @@
 
     align-items:start;
      gap: 10px;
-     align-content: flex-start;
+     /* align-content: flex-start; */
 
 }
 
@@ -23,22 +30,39 @@
     order:1;
     
     /* by default sabka order starting me 0 hota h  */
-
-    flex-grow:2;
+/* 
+    flex-grow:2; */
 }
 #box3{
     order:8;
 }
 #box2{
     order:5;
+    align-self: stretch;
+    /* align self se ek particular ko hum set karskete h  */
+}
+#box3{
+    align-self: flex-end;
 }
 .box{
     border:1px solid brown;
     background-color: aqua;
-    width:50px;
-    flex-grow:1;
+    /* width:50px;
+    flex-grow:1; */
     /* sab grow karte h aur eq width karlete h apni  */
 
-    flex-shrink: 4;
+    /* flex-shrink: 4; by default value is 1 */ 
     /* sab log squeeze karte h par jiske par ye laga hota h hum uski shrink speed set kardete h  */
+
+     flex-basis: 100px;
+    /*isme aur width wale me koi frk ni padhta h 
+    but but but agar mane width wale me limit se zada content daal du to vo usko trim kardeta but in the case of flex vo grow kar jata h mtlb website responsive h  */
+        /* flex-basis: 50% ; ek item 50% of width lega   */
+        /* but ye work ni karega kyuki 1 line me 2 ayenge but dono ki border bhi h right and left sooo we will make universal  selector*/
+
+    /* flex - a short hand notation by which u know mention all these three properties  */
+    /* flex: 3 4 2 120 px; */
+    /* par use krna not that good  */
+
+    
 }
