@@ -1,8 +1,33 @@
-#a{
+#Green{
     
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background-color: green;
+    margin: 20px;
+}
+#Red{
     
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 20px;
+    
+}
+#Yellow{
+    
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    margin: 20px;
+    
+}
+#light{
+    border-color: black;
+    background-color: black;
+    width: 140px;
+    height: 380px;
+    padding: 5px;
 }
