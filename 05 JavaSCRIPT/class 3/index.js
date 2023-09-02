@@ -175,6 +175,7 @@ let comb=first.concat(second);
 console.log(comb);
 
 // slicing
-let slic=comb.slice(3,5);
+let slic=comb.slice(3,5);//end index se ek phelee tk elemenet leta h 
 console.log(slic);
+
 
