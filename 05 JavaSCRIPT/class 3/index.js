@@ -21,4 +21,5 @@ console.log(lastname);
 // convert primitive to obejct  just type dot its the behaviour of js 
 
 lastName.toUpperCase();
-
+lastName.includes("ba");
+// startwith endwith etc we have many more function like this 
