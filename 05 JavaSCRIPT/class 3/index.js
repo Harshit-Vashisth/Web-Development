@@ -177,3 +177,4 @@ console.log(comb);
 // slicing
 let slic=comb.slice(3,5);
 console.log(slic);
+
