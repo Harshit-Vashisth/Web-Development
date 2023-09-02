@@ -166,3 +166,14 @@ n2.length=0;
 
 // another way is loop and pop 
 
+
+// COMBINING AND SLICING ARRAY 
+let first=[1,2,4,4,5,7];
+let second=[4,5,6,4,32];
+// combine 
+let comb=first.concat(second);
+console.log(comb);
+
+// slicing
+let slic=comb.slice(3,5);
+console.log(slic);
