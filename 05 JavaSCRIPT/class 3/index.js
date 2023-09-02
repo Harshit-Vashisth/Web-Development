@@ -179,3 +179,66 @@ let slic=comb.slice(3,5);//end index se ek phelee tk elemenet leta h
 console.log(slic);
 
 
+// Spread Operations 
+let f=[1,2,3];
+let f1=[1,2,3];
+let f2=[...f1,'b',...f];      //this is also used to combine the arrays 
+console.log(f2);
+
+
+//copy 
+let another =[...f2];
+
+// Iterating in an array 
+let arr=[10,20,30,40,50];
+// looop in literal FOR OF 
+for(let i of arr){
+    console.log(i);
+}
+console.log(' ');
+// FOR EACH LOOP
+arr.forEach(function(number){
+    console.log(number);
+})
+
+
+console.log(' ');
+// converting it to arrow 
+arr.forEach(number=>console.log(number));
+
+
+// JOINIG ARRAY 
+let no=[1,2,3];
+// 123 i want this as output 
+let join=no.join(',');
+console.log(join);
+
+// SPLITING 
+let m="This is my msg";
+let part=m.split(' ');
+console.log(part);
+// split method creates an array 
+// rejoin them 
+let joined=part.join('_');
+console.log(joined);
+
+
+// SORTING
+let array=[122,42,-52,512,1];
+let fg=array.sort();
+console.log(fg);
+console.log(array.reverse());
+
+// descresing in array is hw
+// sometime it is possible that the sort funciton reflect the error which can be resolve using predicate functions 
+
+// Filtering in arrays 
+// just like amazon filters 
+let filt=array.filter(function(val){
+    return val<=0;
+});
+console.log(filt);
+
+// convert to arrow 
+let fil=array.filter(val=> val<=0);
+console.log(fil);
