@@ -101,3 +101,13 @@ console.log(course.indexOf({no:1,name:'love'}));
 // ans is giving -1 whyyy
 // it is because it is not primitive they both are let diff 
 // in dono ka ref alg alg place pr h 
+
+// SEARCHING WITH OBJECT 
+// for this we are going to use callbakc functions 
+// a callback fucntion is a ducnion passed into another fucntion as an argument which is then invoked undeer outer function to perform some kindof actions 
+
+let courses = course.find(function(course){
+    return course.name=='Love';
+})
+// here we are finding a course whose name is love 
+console.log(courses);
