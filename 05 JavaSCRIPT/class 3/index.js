@@ -255,3 +255,5 @@ let items=n.map(function(val){
 
 console.log(items);
 
+
+// chaining means ki alg alg likh kar combine kardo simple 
