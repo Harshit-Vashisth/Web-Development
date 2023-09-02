@@ -242,3 +242,16 @@ console.log(filt);
 // convert to arrow 
 let fil=array.filter(val=> val<=0);
 console.log(fil);
+
+
+
+// MAPPING /
+// map each elemnet of array to something elese 
+let n=[7,8,9,10];
+// mapping it string   
+let items=n.map(function(val){
+    return 'student_no'+val;
+});
+
+console.log(items);
+
