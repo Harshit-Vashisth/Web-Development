@@ -22,4 +22,4 @@ console.log(lastname);
 
 lastName.toUpperCase();
 lastName.includes("ba");
-// startwith endwith etc we have many more function like this 
+// startwith endwith trim replace etc we have many more function like this 
