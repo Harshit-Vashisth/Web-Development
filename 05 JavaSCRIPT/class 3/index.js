@@ -23,3 +23,24 @@ console.log(lastname);
 lastName.toUpperCase();
 lastName.includes("ba");
 // startwith endwith trim replace etc we have many more function like this 
+
+let msg='this is my first msg';
+let words=msg.split(' ');
+console.log(words);
+
+// // template literal
+// suppose i wan tto print like this 
+// hello, 
+// my name is harshit
+// i am a full stack web dev
+
+let ms='hello \n my name is \' harshit \n i am a full stack dev';
+console.log(ms);
+// \' isse we can use single code to skip esc seq 
+
+
+
+
+
+
+
