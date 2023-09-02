@@ -108,6 +108,61 @@ console.log(course.indexOf({no:1,name:'love'}));
 
 let courses = course.find(function(course){
     return course.name=='Love';
-})
+});
 // here we are finding a course whose name is love 
 console.log(courses);
+
+// USING ARROW FUCNTION TO MAKE IT MORE READABLE 
+// REMOVE FUNCTION PUT ARROW IF INPUT PARAMETER IS SINGLE REMOVE BRACKETS 
+// IF SINGLE LINE OF CODE REMORE CURLEY BRACE AND RETURN 
+let cour = course.find(course=> course.name=='Love');
+console.log(cour);
+
+// if no input then blank bracket 
+
+
+// Removing elements 
+// END 
+// pop() 
+
+// BEGIN
+// shift()
+
+// MIDDLE REMOVE 
+// splice(3,1);
+let num=[1,2,2,3,4,5];
+num.pop();
+console.log(num);
+num.shift();
+console.log(num);
+
+num.splice(2,1);
+console.log(num);
+
+
+// EMPTYING AN ARRAY 
+num=[]
+// this would work and will be removed by garbage collector 
+// there is a problem in this 
+let a=[1,2,3,45];
+let a2=a;
+a=[];
+console.log(a);
+console.log(a2);
+// here a2 will be still storing all the vlaues kyuki ref / address copy hota h yaha pr 
+
+// another way is splice   
+let n1=[3,2,3,4,5];
+let n2=n1;
+n1.splice(0,n1.length);
+console.log(n1);
+console.log(n2);
+// this will work too 
+
+
+// another way is making length 0 
+n2.length=0;
+// this will also remove that
+
+// another way is loop and pop 
+
