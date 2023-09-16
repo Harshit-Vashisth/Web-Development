@@ -1,6 +1,9 @@
 .hello{
     font-size: 40 px;
     background-color: aqua;
-    max-height: 100 px;
+    max-height: 100px;
     border: 1px solid black;
+    overflow: scroll;
+    min-height: 50px;
+    text-shadow: 3px 3px 5px blue,10px 10px 5px white;
 }
