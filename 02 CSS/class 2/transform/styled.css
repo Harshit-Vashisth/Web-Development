@@ -6,14 +6,14 @@ div{
     /* agar humko 3d me kaam karunga h toh humkousme perspective ko bhi dekhna hota h  */
 }
 .translated{
-    transform:perspective(10px) translateZ(-10px) ;
+    transform:perspective(70px) translateZ(-9px) ;
 }
-/* jo perspective h it works like meri eyes and ye translate ka jo disstance h vo 10 px  */
+/* jo perspective h it works like meri eyes and y e translate ka jo disstance h vo 10 px  */
 
 .scaled{
     /* zooming  */
     margin :20px;
-    transform:perspective(350px) scaleZ(3) rotateX(15deg) rotateY(30deg);
+    transform:perspective(290px) scaleZ(2) rotateX(25deg) rotateZ(190deg) rotateY(36deg);
     
     /* if u want to rotat there is no need to tranfomm  */
 }
