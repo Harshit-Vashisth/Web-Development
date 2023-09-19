@@ -1,0 +1,59 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+#wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    /* yaha hum 3d wali game khelenge toh 4d wali game ko on karne ke liye  */
+    /* we have to define persepctive  */
+    /* ye z=0 plane and humari eye ke bich wla distance hota h  */
+    perspective: 10px;
+    /* value se frk ni padhta h  */
+}
+    .container{
+
+        /* use flex  */
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height:100%;
+
+         /* transform style;  */
+        transform-style: preserve-3d;
+
+
+        z-index:-1;
+        /* z index is used for obver lapping  */
+    }
+
+.background{
+    transform:translateZ(-40px) scale(5.1);
+    /* isse image choti dikhegi but choti ni hui dur chali gyi h  */
+}
+.foreground{
+    transform:translateZ(-20px) scale(3);
+}
+
+.background,.foreground{
+    position:absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    object-fit: cover; 
+    /* fit image in container ,,, container by kara kyuki i want to create flex and for flex i want to create  a parent box soo  */
+}
+h1{
+    position: absolute;
+    font-size:10rem;
+    color: white;
+    top:5rem;
+    left:50%;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transform: translateX(-50%);
+    letter-spacing: 4px;
+}
