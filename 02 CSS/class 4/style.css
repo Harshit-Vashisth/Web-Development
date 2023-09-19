@@ -51,7 +51,7 @@ h1{
     position: absolute;
     font-size:10rem;
     color: white;
-    top:5rem;
+    top:6rem;
     left:50%;
     text-shadow: 0 0 10px rgba(0,0,0,0.3);
     transform: translateX(-50%);
