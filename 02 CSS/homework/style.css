@@ -1,0 +1,11 @@
+*{
+    margin:0px;
+}
+body{
+    background-color: rgb(245, 224, 199);
+}
+.container{
+    height:500px;
+    background-color: white;
+    display: grid;
+}
