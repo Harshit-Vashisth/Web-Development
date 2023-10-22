@@ -28,3 +28,18 @@
 #footer{
     grid-area: ft;
 }
+
+.childgrid{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+
+}
+.element{
+    border: 2px solid green;
+    background-color: hotpink;
+    
+}
