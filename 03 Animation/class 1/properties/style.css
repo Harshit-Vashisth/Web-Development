@@ -1,0 +1,28 @@
+.container{
+    border:1px solid brown;
+    background-color: yellow;
+    height:700px;
+    width: 600px;
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+
+    grid-gap: 10px;
+
+    /* justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between; */ 
+    /* align-content: start; */
+    align-items: start;
+    align-items: center;
+    align-items: end;
+    /* block ke bottom start wagera me placing ke liye  */
+
+
+
+}
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}
