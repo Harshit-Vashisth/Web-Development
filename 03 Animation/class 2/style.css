@@ -1,0 +1,16 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+.container{
+    border:1px solid brown;
+    background: red;
+    height: 300px;
+    width: 300px;
+}
+.box{
+    border:2px solid green;
+    background-color: aqua;
+    --choco:rgb(208, 210, 231);
+    color:var(--choco);
+}  
