@@ -16,11 +16,12 @@
     "card3 card3 card4 card4"
     "card5 card5 card6 card6"
     ;
+
     
 }
 .box{
     background: #f0c6c6;
-    
+
     
 }
 #sub{
@@ -29,18 +30,20 @@
 #title{
     grid-area: bb;
     font-size: 40px;
-   
+    justify-self: center;
 }
+
 #search{
     grid-area: ser;
-    justify-items: end;
-     align-items: end;
+    justify-self: end;
 }
 img {
     height: 60%;
+   
 }
 #card1{
     grid-area: card1;
+    
 }
 #card2{
     grid-area: card2;
