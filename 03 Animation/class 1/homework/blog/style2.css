@@ -7,19 +7,28 @@
     background-color: #91f5f5;
     display: grid;
     height: 900px;
-    width: 50%;
+    width: 80%;
     padding: 2%;
     grid-gap: 20px;
-    grid-template-rows:6% 1fr 1fr 1fr;
-    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-rows:6% 1fr ;
+    grid-template-columns: 100px 2fr 1fr 100px;
     grid-template-areas: 
     "ss bb bb ser"
-    "card1 card1 card2 card2"
-    "card3 card3 card4 card4"
-    "card5 card5 card6 card6"
+    "cont cont cont cont"
     ;
 
-    
+.content{
+    grid-area: cont;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-areas: 
+    "main main about"
+    "main main archive"
+    "main main else"
+}
 }
 .box{
     /* background: #f0c6c6; */
@@ -31,7 +40,7 @@
 }
 #title{
     grid-area: bb;
-    font-size: 40px;
+    font-size: 2.3rem;
     justify-self: center;
     color: black;
 }
@@ -41,31 +50,26 @@
     justify-self: end;
 }
 img {
-    height: 60%;
+    height: 50%;
    
 }
-#card1{
-    grid-area: card1;
+#main{
+    grid-area: main;
 }
-#card2{
-    grid-area: card2;
+#about{
+    grid-area: about;
+    background-color: #b6b5b5;
 }
-#card3{
-    grid-area: card3;
+#archive{
+    grid-area: archive;
+} 
+#else{
+    grid-area: else;
 }
-#card4{
-    grid-area: card4;
-}
-#card5{
-    grid-area: card5;
-}
-#card6{
-    grid-area: card6;
-}
-#card1, #card2, #card3,#card4,#card5,#card6{
+#main, #about, #archive,#else{
     display: flex;
     flex-direction: column;
-    background-color: #f4f9d9;
+    
     padding: 5%;
     border: 3px solid slategray;
     
@@ -89,4 +93,9 @@ img {
 #link{
     color: #0368ff;
     align-items: end;
+}
+
+.archive{
+    display: flex;
+    flex-direction: column;
 }
