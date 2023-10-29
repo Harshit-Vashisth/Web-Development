@@ -8,7 +8,7 @@
     border: 1px solid black;
     background-color: yellow;
     height: 700px;
-    display: grid;
+    display: inline-grid;
     grid-template-rows: 30px 1fr 30px;
     grid-template-columns: 200px 400px;
     grid-gap: 4px;
