@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    border: border-box;
+    
+}
+.container{
+    background-color: #91f5f5;
+    display: grid;
+    height: 900px;
+    width: 50%;
+    padding: 2%;
+    grid-gap: 20px;
+    grid-template-rows:6% 1fr 1fr 1fr;
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-areas: 
+    "ss bb bb ser"
+    "card1 card1 card2 card2"
+    "card3 card3 card4 card4"
+    "card5 card5 card6 card6"
+    ;
+
+    
+}
+.box{
+    /* background: #f0c6c6; */
+
+    
+}
+#sub{
+    grid-area: ss;
+}
+#title{
+    grid-area: bb;
+    font-size: 40px;
+    justify-self: center;
+    color: black;
+}
+
+#search{
+    grid-area: ser;
+    justify-self: end;
+}
+img {
+    height: 60%;
+   
+}
+#card1{
+    grid-area: card1;
+}
+#card2{
+    grid-area: card2;
+}
+#card3{
+    grid-area: card3;
+}
+#card4{
+    grid-area: card4;
+}
+#card5{
+    grid-area: card5;
+}
+#card6{
+    grid-area: card6;
+}
+#card1, #card2, #card3,#card4,#card5,#card6{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f9d9;
+    padding: 5%;
+    border: 3px solid slategray;
+    
+}
+
+#cardhead{
+    color: #0368ff;
+    margin-bottom: 3%;
+}
+#titlesub{
+    font-size: 200%;
+    margin-bottom: 1%;
+}
+#date{
+    opacity: 60%;
+    margin-bottom: 1%;
+}
+#description{
+    margin-bottom: 30%;
+}
+#link{
+    color: #0368ff;
+    align-items: end;
+}
