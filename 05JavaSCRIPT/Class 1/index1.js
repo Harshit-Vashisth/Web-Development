@@ -38,3 +38,6 @@ function Rect(){
 //object creation using rectangle 
 let rectangleobj=new Rect();
  rectangleobj.color='yellow';
+
+ delete rectangleobj.color;
+ 
