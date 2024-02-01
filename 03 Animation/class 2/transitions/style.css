@@ -6,7 +6,19 @@
     display: flex;
 }
 .box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
     border: 2px solid orange;
     background-color: aqua;
+    /* i want that in transition my aqua colour should change to green so lets have a look */
+    /* transition: 1s; */
+    /* transition-property: all; */
+    /* transition: all 2s ease-out ; */
+    transition: transform 2s cubic-bezier(0.69,-0.31, 0.14, 2.97) ;
 
+}
+.box:hover{
+    transform:translateX(500px);
+    background-color: brown;
 }

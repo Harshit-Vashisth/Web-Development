@@ -1,0 +1,49 @@
+.container{
+    width: 100%;
+    height: 215px;
+    background-color: yellow;
+    border: 2px solid red;
+}
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+    height: 212px;
+    width: 212px;
+    animation: babbar;
+    animation-duration: 3s  ;
+    animation-iteration-count: 8;
+    animation-timing-function: ease-in;
+    animation-delay:1s;
+    animation-direction:alternate;
+    /* animation-fill-mode: ; */
+}
+@keyframes babbar {
+    0% {
+        
+        width: 212px;
+    }
+    30%{
+        background-color: yellow;
+        width: 35%;
+        
+    }
+    65%{
+        background-color: greenyellow;
+        width:70%;
+    
+    }
+    100%{
+        width:100%;
+        background-color: green;
+    }
+}
+/* @keyframes babbar {
+    from {
+        width:212px;
+        height:212px;
+    }
+    to{
+        width:1000px;
+        height: 1000px;
+    }
+} */
