@@ -127,8 +127,8 @@ for(let key of Object.entries(rect3)){
     console.log(key);// it is not an iterable 
 }
 
-
 // to find if property exist in a class ie object
+
 if('color' in rect3)
     console.log('present')
 else 
