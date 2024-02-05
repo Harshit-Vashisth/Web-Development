@@ -110,6 +110,9 @@ console.log(ba.value);//11
 // note : primitive are copied by their value 
 // refrences are copied by their address/ ref
 
+
+
+
 // for in loops
 let rect3={length:2,breadth:4};
 // for in loop
