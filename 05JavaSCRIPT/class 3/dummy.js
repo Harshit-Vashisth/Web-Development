@@ -49,7 +49,5 @@ let cour=[
 
 console.log(cour.indexOf({no:1,naam:'koef'}));
 // ??if we are working with obj we are not able to indectify 
-let f=cour.find(function(course){
-    return course.naam==='koef';
-})
+let f=cour.find(course=>course.naam==='koef');
 console.log(f);
