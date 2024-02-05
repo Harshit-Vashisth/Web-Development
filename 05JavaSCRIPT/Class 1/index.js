@@ -7,6 +7,8 @@ console.log('b');
 else
 console.log('fail');
 
+let names=['love','babbar'];
+console.log(names[0]);
 switch(marks){
     case 90: console.log('45'); 
     break;
@@ -14,3 +16,12 @@ switch(marks){
     break;
     default: console.log("ads");
 }
+let a=4;
+let b=4;
+if(a===b)
+console.log("eq");
+
+
+console.log(false||"harhsit"||"vashsith");
+//this i happing becz or has a concept of short circuting
+

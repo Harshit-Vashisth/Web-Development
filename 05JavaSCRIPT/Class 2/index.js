@@ -11,6 +11,7 @@ let a={
 // here we are doign object oriented programing 
 
 
+
 // function for repeatative object creations
 // we have two ways to create 
 // factory ->function were object get created 
@@ -64,7 +65,7 @@ let Rectangle1= new Function('len','bre',`
         console.log('drawing');
     }`
     );
-    let rect2=new Rectangle1(2,3);
+    let rect2=new Rectangle1(8,3);
     console.log(rect2);
 
 // Constructor poroperty 
