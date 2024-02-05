@@ -42,3 +42,14 @@ console.log(a.indexOf('a'));
 console.log(a.includes('a'));
 
 //refrence
+let cour=[
+    {no:1,naam:'koef'},
+    {no:3,naam:'def'}
+];
+
+console.log(cour.indexOf({no:1,naam:'koef'}));
+// ??if we are working with obj we are not able to indectify 
+let f=cour.find(function(course){
+    return course.naam==='koef';
+})
+console.log(f);
