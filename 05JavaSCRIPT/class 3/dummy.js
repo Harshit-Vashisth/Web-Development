@@ -51,3 +51,22 @@ console.log(cour.indexOf({no:1,naam:'koef'}));
 // ??if we are working with obj we are not able to indectify 
 let f=cour.find(course=>course.naam==='koef');
 console.log(f);
+
+//removing element 
+//end pop()
+let n=[1,2,3,4];
+console.log(n);
+n.pop();
+console.log(n);
+n.shift();
+console.log(n);
+n.push(3);
+n.push(4);
+n.push(5);
+n.splice(2,2);
+console.log(n);
+
+//empty array
+n=[];
+console.log(n);
+//if element is store somewhere them it is removed by garbage collector
