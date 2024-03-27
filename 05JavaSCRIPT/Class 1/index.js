@@ -23,5 +23,5 @@ console.log("eq");
 
 
 console.log(false||"harhsit"||"vashsith");
-//this i happing becz or has a concept of short circuting
+//this is happing becz or has a concept of short circuting
 
