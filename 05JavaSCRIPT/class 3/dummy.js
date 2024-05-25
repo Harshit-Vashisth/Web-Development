@@ -1,147 +1,119 @@
-console.log("hello guys");
+let lastname='babbar';
+let lstn=new String("love");
+
+let arr=[1,3,3,3,4]
+console.log(arr[1])
 
 
-// maths objects 
+arr.push(6);
+console.log(arr)
+arr.unshift(6);
+console.log(arr)
+arr.splice(2,0,'a','b');
+console.log(arr)
 
-console.log(Math.random());
-console.log(Math.PI);
-console.log(Math.round(2.7));
+// finding a number if present or not 
+console.log(arr.indexOf(4));
+console.log(arr.indexOf(9));
 
-// stirng are the primitive type not object
-let lastname='bbar';
-let last=new String("bbabr");
-// this is used to create an object stirng 
-console.log(typeof last);
-console.log(typeof lastname);
+//we want to check if no exist in array or not 
+if(arr.indexOf(10)!=-1)
+    console.log("present");
 
-// now lets focus on slipt a strong 
-let msg='this is string';
-let w=msg.split(' ');
-console.log(w);
+console.log(arr.includes(5));
 
+console.log(arr.indexOf(4,2))
+// so here the searching will start from 3
 
-//template litreal
-let ms=`helo
-jarjsot
-kjfdfkdifid`;
-console.log(ms);
+console.log('red')
 
-let date=new Date();
-console.log(date);
-
-let d=new Date(`June 20 1998 04:15`);
-console.log(d);
-
-//array 
-let arr=[1,2,3,4,5,5];
-arr.push(18);
-console.log(arr);
-arr.splice(2,0,'a');
-console.log(arr);
-arr.unshift(4);
-console.log(arr);
-
-
-console.log(arr.indexOf(18));
-console.log(arr.includes(18));
-console.log('harshi');
-
-
-
-
-
-
-let a=[2,2,2,2];
-a.push(3);
-console.log(a);
-a.splice(2,0,'a');
-console.log(a);
-a.unshift(4);
-console.log(a);
-
-
-//searching 
-console.log(a.indexOf('a'));
-console.log(a.includes('a'));
-
-//refrence
-let cour=[
-    {no:1,naam:'koef'},
-    {no:3,naam:'def'}
+let course=[
+    {no:1,naam:'love'},
+    {no:2,naam:'Rahul'},
+    {no:3,naam:'Harshit'}
 ];
+// we made array of object 
+console.log(course);
 
-console.log(cour);
-console.log(cour.indexOf({no:1,naam:'koef'}));
-// ??if we are working with obj we are not able to indectify 
-//it is object it not a object they both are different so we wont be ablr to tell that 
-// to search we would requiered a callback functions 
-let fo=cour.find(function(course){
-    return course.naam=='def';
-});
-console.log(fo,);
-let f=cour.find(course=>course.naam==='koef');
-console.log(f);
+console.log(course.indexOf({no:1,naam:'love'}))
+// the ans comign is -1 but by becz it is an object not a array here the ref thing is different
 
-//removing element 
-//end pop()
-let n=[1,2,3,4];
-console.log(n);
-n.pop();
-console.log(n);
-n.shift();
-console.log(n);
-n.push(3);
-n.push(4);
-n.push(5);
-n.splice(2,2);
-console.log(n);
+let courses = course.find(course=>course.naam=='love');
+console.log(courses)
 
-//empty array
-n=[];
-console.log(n);
-//if element is store somewhere them it is removed by garbage collector
-function Create(){
-return rect={
-    l:4,
-    k:5,
-    draw:function(){
-        console.log("hrllo");
-    }
-};
+
+let arr1=[2,4,5,6,3,6,3,6,7];
+arr1.pop();
+arr1.shift();
+arr1.splice(3,1);
+console.log(arr1);
+
+let arr2=arr1;
+// here the address would be copied 
+// emptying an array 
+arr1=[10,20,30,40,50]
+
+// but the values would be store somewhere so garbage collector will remove those value 
+
+for(let val of arr1){
+    console.log(val)
 }
 
-
-// combining and slicing the aarray '
-let first=[1,2,3];
-let lastn=[4,5,6];
-let comb=first.concat(lastn);
-console.log(comb);
-let k=comb.slice(2,4);
-console.log(k);
-
-// spread operatorr
-let cons=[...first,...lastn];
-console.log(cons);
-let another=[...cons];
-console.log(another);
-
-
-// Iterating in an array ]\
-for(let c of comb){
-    console.log(c);
-}
-
-comb.forEach(function(no){
+// for each
+arr.forEach(function(no){
     console.log(no);
 });
 
-arr.forEach(no=>console.log(no));
-
-//mapping  map each element to something else
-let no=[1,2,3,4,5];
-let map=no.map(function(val){
-    return 'stud_no'+val;
+arr1.forEach(function(no){
+    console.log(no);
 });
-console.log(map);
 
-// mapping with objects 
+
+arr1.forEach(no=>console.log(no));
+// arrow function 
+
+// joining arrays
+numbers=[1,3,2]
+
+numbers.sort();
+console.log(numbers)
+
+
+numbers.reverse();
+console.log(numbers)
+
+let a=[
+    {id:1,name:'love'},
+    {id:2,name:'arman'}
+];
+
+// to sort this we have to make a predicate fucntion 
+// hw ?
+
+
+
+// Filter()
+// arr1.filter() 
+// this cant work we need a callback function 
+
+let fit=arr1.filter(val=> val>20);
+console.log(fit)
+
+let num=[4,5,6,32,10]
+let mp=num.map(no=>'student-no'+no);
+console.log(mp)
+
+// mapping with object 
+// mapping with the objects ?
+let num1= [1,2,3,4];
+let fit1=num1.filter(val=>val>=0);
+let items=fit.map(val=>{value:val});
+console.log(items)
+
+// chanign 
+
+let item1=num1.filter(val=>val>=0).map(val=>{value:val});
+console.log(item1)
+
+
+

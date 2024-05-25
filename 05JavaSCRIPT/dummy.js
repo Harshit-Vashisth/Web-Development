@@ -1,66 +1,57 @@
-console.log("hello Ji");
-var a=5;
-console.log(a);
-var a=6;
-console.log(a);
-const no=12;
-
-let person={
-    fname:'heahri',
-    age:24
-};
-console.log(person.age);
-
-let names=['name','rahil',true];
-console.log(names[1]);
-
-console.log(2>3?1:2);
-console.log(false||'Love');
-console.log(false||2||3);
-//undefined, null . 0 . false. '' . NAN    these all are falsey
-let exp=2;
-switch(exp){
-    case 1: console.log('hi'); 
-    case 2: console.log('hello');
-}
-
-for(let i=0;i<5;i++){
-    console.log(i);
-}
-const remt={
-    length:1,
-    breadth:2,
-    draw: function(){
-        console.log("ho");
+console.log("hello")
+let rect={
+    l:1,
+    b:2,
+    draw:function(){
+        console.log('draw');
     }
 };
 
-function createrect(l,b){
-    return rect= {
-        length:l,
-        breath:b,
-        draw(){
-            console.log("shdi");
+function Rectangle(){
+    let rect={
+        l:1,
+        b:2,
+        draw (){
+            console.log('Dwar');
         }
     };
-};
-
-let reato1=createrect(2,3); 
-
-function createe(l,b){
-this.length=l;
-this.breath=b;
-this.draw=function(){
-    console.log('draw');
+    return rect;
 }
-}
-let rectobj=new createe(4,5);
-rectobj.color='yello';
+console.log(rect.b)
 
-let r1=new Function('l','b',`this.length=l;
-this.breath=b;
-this.draw=function(){
-    console.log('draw');
-}`);
-let ro1=new r1(2,5);
-console.log(rect);
+let rect1=Rectangle();
+console.log(rect1.l);
+
+
+// if i also want to chagne the parametere value toooso let say create rect me input para aare h 
+
+function hello(length,breadth){
+    return rect={
+        l:length,
+        b:breadth,
+        draw(){
+            console.log(l,b);
+        }
+    };
+}
+let a=hello(5,3);
+console.log(a)
+
+//constructor fucntion prop or method of initilize karta h 
+function NoOfStudent(){
+    this.length=1;
+    this.breadth=2;
+    this.draw=function(){
+        console.log('fj');
+    }
+}
+
+//object creation
+//object using constructor
+let rectobj=new NoOfStudent();
+//new give a empty constructor
+
+rectobj.color='yekki';
+delete rectobj.color;
+console.log(rectobj);
+
