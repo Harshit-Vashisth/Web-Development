@@ -1,57 +1,77 @@
-console.log("hello")
-let rect={
-    l:1,
-    b:2,
-    draw:function(){
-        console.log('draw');
+function area(){
+    console.log("heh")
+};
+let f=function k(){
+    console.log("fjiodf")
+}
+let k =function(){
+
+}
+let x=1;
+x='a';
+
+
+function sum(a,b){
+    console.log(arguments)
+    let tot=0
+    for(let value of arguments)
+        tot+=value
+    return tot;
+}
+
+console.log(sum(2,3))
+
+console.log(sum(2,3,2,3))
+
+console.log(sum(2))
+// nan not a number
+
+function sum1(...arr){
+    let tot=0;
+    for(let value of arr)
+        tot+=value
+    return tot;
+}
+
+console.log(sum1(2,2,5,3,543,23,53));
+
+
+function sum3(a=3){
+    return a*2;
+}
+console.log(sum3(10));
+let person={
+    fn:'love',
+    ln:'bab',
+    get fun(){
+        return `${person.fn} ${person.ln}`
+    },
+    set fun(val){
+        if(typeof val!==string)
+            throw new Error("you snet a wrong")
+        let parts=val.splits(' ');
+        this.fn=parts[0];
+        this.ln=parts[1];
     }
 };
+console.log(person.fun);
 
-function Rectangle(){
-    let rect={
-        l:1,
-        b:2,
-        draw (){
-            console.log('Dwar');
-        }
-    };
-    return rect;
-}
-console.log(rect.b)
+// reducing an array 
+let nums=[1,2,3,4];
+let tot=0;
+for(let i of nums)
+    tot=tot+i;
+console.log(tot);
 
-let rect1=Rectangle();
-console.log(rect1.l);
+//iterables pr for off loop lagta h bss 
+let totsum=nums.reduce((accumulator,currentvalue)=>accumulator+currentvalue,0);
+console.log(totsum); 
 
 
-// if i also want to chagne the parametere value toooso let say create rect me input para aare h 
 
-function hello(length,breadth){
-    return rect={
-        l:length,
-        b:breadth,
-        draw(){
-            console.log(l,b);
-        }
-    };
-}
-let a=hello(5,3);
-console.log(a)
 
-//constructor fucntion prop or method of initilize karta h 
-function NoOfStudent(){
-    this.length=1;
-    this.breadth=2;
-    this.draw=function(){
-        console.log('fj');
-    }
-}
 
-//object creation
-//object using constructor
-let rectobj=new NoOfStudent();
-//new give a empty constructor
 
-rectobj.color='yekki';
-delete rectobj.color;
-console.log(rectobj);
+
+
 

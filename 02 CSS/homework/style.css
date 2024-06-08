@@ -16,6 +16,7 @@ body{
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap:15px;
     border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(42, 21, 77);
 }
 .box{
     margin-left: 0px;
