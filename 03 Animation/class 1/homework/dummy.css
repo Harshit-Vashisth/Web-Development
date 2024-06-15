@@ -1,0 +1,44 @@
+*{
+box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+
+}
+.container{
+
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 50px;
+    width:1200px;
+    margin: 0 auto;
+
+}
+.taskbar{
+    width: 1000px;
+
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.taskbar p{
+    color: #7a7777;
+}
+h1{
+    text-decoration: underline;
+}
+button{
+    width: 40px;
+}
+.box{
+    /* border: 3px solid rgb(97, 97, 97); */
+    border-radius: 10px;
+    padding:20px;
+    box-shadow: inset 0px 2px 10px 2px #353535;
+
+    width:70%
+}

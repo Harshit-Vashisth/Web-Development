@@ -1,0 +1,42 @@
+.container{
+
+}
+.taskbar{
+    width: 1000px;
+
+    margin-left: 24%;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    width: 1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-rows:1fr 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hd hd at"
+    "ft ft ft";
+}
+.taskbar p{
+    color: #7a7777;
+}
+h1{
+    text-decoration: underline;
+}
+button{
+    width: 40px;
+    background-color: aqua;
+    grid-area: "ft";
+}
+
+#main{
+    grid-area: hd;
+    background-color: rgb(22, 139, 67);
+}
+.jbox{
+    grid-area: at;
+    background-color: blueviolet;
+}

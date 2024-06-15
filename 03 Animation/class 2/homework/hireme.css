@@ -1,0 +1,40 @@
+
+#wrapper{
+    width:100vw;
+    height:100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.box{
+    background-color: #e84949;
+    padding:0.8rem 2.8rem;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px grey;
+    color:aliceblue;
+    position: relative;
+    z-index:1;
+}
+
+.box::before{
+    content:"";
+    background-color: #1f1f1f;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transform: scaleX(0);
+    transform-origin:left;
+    transition:all 0.8s;
+    z-index: -1;
+}
+
+.box:hover::before{
+    transition: 500ms;
+    box-shadow: 5px 10px 20px 0px purple;
+    transform: scaleX(1);
+    cursor: pointer;
+}
