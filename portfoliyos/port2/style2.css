@@ -1,0 +1,19 @@
+img{
+    width: 70%;
+    border: darkblue;
+    margin-left: 13%;
+    margin-top: 5%;
+
+}
+.content{
+    background-color: rgb(203, 231, 255);
+    width: 50%;
+    margin-left: 20%;
+}
+.m-box{
+    background-color: #c9e1ff;
+    height: 105%;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -5%;
+  }
