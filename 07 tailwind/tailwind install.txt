@@ -1,15 +1,18 @@
+
+using post css 
+
 npm init
 
 npm install -D tailwindcss postcss autoprefixer vite
 npx tailwindcss init -p
 
-
+install tailwind intlesense
 
 tailwind.config.js
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: ["*"], // add $
   theme: {
     extend: {},
   },
@@ -22,9 +25,6 @@ package.json
 }
 
 
-[
-
-
 main.css
 
 @tailwind base;
@@ -32,4 +32,4 @@ main.css
 @tailwind utilities;
 
 
-link
+link main .css
